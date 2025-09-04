@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<title>Mi vida</title>
+<style>
+  body {
+    margin: 0;
+    padding: 20px;
+    font-family: 'Georgia', serif;
+    background: linear-gradient(to bottom, #ffe6e6, #ffcccc);
+    color: #330000;
+    line-height: 1.6;
+    overflow-x: hidden;
+  }
+  h1 {
+    text-align: center;
+    font-size: 3em;
+    color: #660000;
+    text-shadow: 2px 2px 5px #ff9999;
+  }
+  p {
+    font-size: 1.2em;
+    margin-bottom: 20px;
+    text-align: justify;
+  }
+  .glow {
+    text-shadow: 0 0 5px #ff9999, 0 0 10px #ff6666, 0 0 20px #ff3333;
+  }
+  /* efecto de olas flotando */
+  .wave {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 200%;
+    height: 200px;
+    background: url('https://i.ibb.co/1d2b4gk/wave.png') repeat-x;
+    animation: wave 10s linear infinite;
+    opacity: 0.4;
+    z-index: -1;
+  }
+  @keyframes wave {
+    from { transform: translateX(0); }
+    to { transform: translateX(-50%); }
+  }
+</style>
+</head>
+<body>
+
+<h1 class="glow">Mi vida</h1>
+
+<p>Hoy me desperté con el alma temblando, con el corazón desbocado y con los labios ardiendo como si hubiera estado besándote toda la noche. Y es que soñé contigo, como tantas veces, pero este sueño fue distinto, fue tan real, tan vívido, que todavía siento tu calor en mi piel y tu voz resonando en mi oído...</p>
+
+<p>Estábamos en la playa, nuestro escenario favorito, donde el mar parece guardar secretos solo para nosotros. El sol se estaba despidiendo del cielo, tiñendo todo de tonos naranjas, rosas y violetas, como si el universo hubiera pintado ese atardecer solo para ti. La brisa acariciaba tu cabello, y cada hebra brillaba como un río de fuego dorado...</p>
+
+<!-- Aquí puedes copiar y pegar toda la carta completa en más <p> ... </p> -->
+
+<p>Hasta entonces, seguiré soñándote, deseándote, esperándote. Porque tú eres mi todo: la calma que me sostiene, la tormenta que me enciende, el aire que me da vida, el fuego que me consume.</p>
+<p class="glow">Por siempre y para siempre tuyo, tu pechochin</p>
+
+<div class="wave"></div>
+
+<audio autoplay loop>
+  <source src="musica.mp3" type="audio/mpeg">
+  Tu navegador no soporta audio HTML5.
+</audio>
+
+</body>
+</html>
